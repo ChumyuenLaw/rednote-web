@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       
       <main className="flex min-h-screen flex-col items-center p-8 md:p-24">
-        <h1 className="text-4xl font-bold mb-8">Welcome to RED Guide</h1>
+        <h1 className="text-4xl font-bold mb-8">Welcome to Rednote Guide</h1>
         <p className="text-xl mb-12 text-center max-w-2xl">
           Discover RED: Your Gateway to China's Most Influential Social Commerce Platform - Where Lifestyle Trends Meet Authentic Reviews
         </p>
