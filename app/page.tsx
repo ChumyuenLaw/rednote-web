@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RedNote - Your Ultimate Guide to Xiaohongshu',
+  description: 'Comprehensive guide to using Xiaohongshu (RED/小红书) for international users. Learn how to navigate, create content, and shop on China\'s top lifestyle platform.',
+  keywords: 'Xiaohongshu, RED, Little Red Book, Chinese social media, lifestyle platform, shopping guide, content creation',
+};
 
 export default function Home() {
   return (

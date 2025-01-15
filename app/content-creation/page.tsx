@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Content Creation Guide for Xiaohongshu | RedNote',
+  description: 'Master content creation on Xiaohongshu (RED). Learn best practices for photos, videos, writing, and engagement to grow your presence on the platform.',
+  keywords: 'Xiaohongshu content creation, RED Note tips, social media content, photo editing, video content, writing tips, engagement strategy',
+};
+
 export default function ContentCreation() {
   return (
     <main className="max-w-4xl mx-auto p-8">

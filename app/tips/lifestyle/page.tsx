@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Lifestyle Content Tips for Xiaohongshu | RedNote',
+  description: 'Create engaging lifestyle content on Xiaohongshu (RED). Expert tips for travel content, restaurant reviews, lifestyle photography, and cultural experiences.',
+  keywords: 'Xiaohongshu lifestyle, RED travel content, restaurant reviews, lifestyle photography, cultural content, travel planning, location guides',
+};
 
 export default function LifestyleTipsPage() {
   const tips = [

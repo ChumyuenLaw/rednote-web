@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Content Creation Tips for Xiaohongshu | RedNote',
+  description: 'Expert tips for creating engaging content on Xiaohongshu (RED). Learn photo editing, caption writing, posting strategies, and engagement techniques.',
+  keywords: 'Xiaohongshu content tips, RED content creation, photo editing tips, writing captions, posting times, hashtag strategy, engagement tips',
+};
 
 export default function ContentCreationTipsPage() {
   const tips = [

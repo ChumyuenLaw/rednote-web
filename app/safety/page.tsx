@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Safety & Privacy Guide for Xiaohongshu | RedNote',
+  description: 'Learn how to stay safe and protect your privacy while using Xiaohongshu (RED). Essential security tips, privacy settings, and best practices for a secure experience.',
+  keywords: 'Xiaohongshu safety, RED privacy, account security, safe shopping, privacy settings, secure payment, online safety',
+};
+
 export default function Safety() {
   return (
     <main className="max-w-4xl mx-auto p-8">
@@ -5,24 +13,24 @@ export default function Safety() {
       
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Account Security</h2>
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-medium mb-3">Password Security</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Use a strong, unique password</li>
+              <li>Use strong, unique passwords</li>
               <li>Enable two-factor authentication</li>
-              <li>Never share your password</li>
-              <li>Regularly update your password</li>
+              <li>Never share account credentials</li>
+              <li>Change passwords regularly</li>
             </ul>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-medium mb-3">Login Protection</h3>
+            <h3 className="text-xl font-medium mb-3">Account Protection</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Monitor login activity</li>
-              <li>Sign out from unused devices</li>
-              <li>Review connected applications</li>
-              <li>Set up login notifications</li>
+              <li>Review connected devices</li>
+              <li>Set up security questions</li>
+              <li>Keep contact info updated</li>
             </ul>
           </div>
         </div>
@@ -30,24 +38,26 @@ export default function Safety() {
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Privacy Settings</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-medium mb-3">Profile Privacy</h3>
-            <div className="space-y-3 text-gray-600">
-              <p>• Control who can see your posts</p>
-              <p>• Manage your follower list</p>
-              <p>• Hide your location information</p>
-              <p>• Control tag settings</p>
+        <div className="bg-gray-50 p-6 rounded-lg">
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-medium mb-2">Profile Privacy</h3>
+              <p className="text-gray-600">Control who can see your profile, posts, and personal information.</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Adjust profile visibility</li>
+                <li>Manage follower permissions</li>
+                <li>Control post visibility</li>
+              </ul>
             </div>
-          </div>
-
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-medium mb-3">Content Privacy</h3>
-            <div className="space-y-3 text-gray-600">
-              <p>• Control comment settings</p>
-              <p>• Manage who can message you</p>
-              <p>• Control resharing options</p>
-              <p>• Manage saved content visibility</p>
+            
+            <div>
+              <h3 className="text-xl font-medium mb-2">Content Sharing</h3>
+              <p className="text-gray-600">Customize how your content is shared and interacted with.</p>
+              <ul className="list-disc list-inside text-gray-600 mt-2">
+                <li>Set default post privacy</li>
+                <li>Control comments and mentions</li>
+                <li>Manage content resharing</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -57,53 +67,35 @@ export default function Safety() {
         <h2 className="text-2xl font-semibold mb-6">Safe Shopping</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-medium mb-2">Verify Sellers</h3>
-              <p className="text-gray-600">
-                Always check seller ratings, reviews, and verification status before making a purchase.
-                Look for official store badges and authentic product certifications.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-medium mb-2">Secure Payments</h3>
-              <p className="text-gray-600">
-                Use RED's secure payment system. Never send money directly to sellers through
-                other payment methods or platforms.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-medium mb-2">Product Authentication</h3>
-              <p className="text-gray-600">
-                Look for authentic product verification badges and cross-reference prices
-                with official retailers when possible.
-              </p>
-            </div>
+            <p className="text-gray-600">
+              <strong>Verify Sellers:</strong> Always check seller ratings and authentication badges before making purchases.
+            </p>
+            <p className="text-gray-600">
+              <strong>Secure Payments:</strong> Only use RED's official payment system for transactions.
+            </p>
+            <p className="text-gray-600">
+              <strong>Product Authentication:</strong> Look for official product verification marks.
+            </p>
+            <p className="text-gray-600">
+              <strong>Keep Records:</strong> Save order details and communication with sellers.
+            </p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-6">Reporting & Support</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border p-4 rounded-lg">
-            <h3 className="text-xl font-medium mb-2">Report Issues</h3>
-            <ul className="text-gray-600 space-y-2">
-              <li>• Suspicious accounts or activity</li>
-              <li>• Fake products or sellers</li>
-              <li>• Inappropriate content</li>
-              <li>• Privacy violations</li>
-            </ul>
-          </div>
-
-          <div className="border p-4 rounded-lg">
-            <h3 className="text-xl font-medium mb-2">Get Help</h3>
-            <ul className="text-gray-600 space-y-2">
-              <li>• Contact customer support</li>
-              <li>• Submit account appeals</li>
-              <li>• Report technical issues</li>
-              <li>• Request account recovery</li>
+        <h2 className="text-2xl font-semibold mb-6">Report Issues</h2>
+        <div className="bg-gray-50 p-6 rounded-lg">
+          <h3 className="text-xl font-medium mb-4">How to Report</h3>
+          <div className="space-y-4">
+            <p className="text-gray-600">
+              If you encounter any issues or suspicious activity:
+            </p>
+            <ul className="list-disc list-inside text-gray-600">
+              <li>Use the in-app reporting feature</li>
+              <li>Contact customer support</li>
+              <li>Document the issue with screenshots</li>
+              <li>Follow up on report status</li>
             </ul>
           </div>
         </div>

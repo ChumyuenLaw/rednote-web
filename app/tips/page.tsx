@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Xiaohongshu (RED) Tips & Tricks | RedNote',
+  description: 'Expert tips and insider tricks for Xiaohongshu (RED). Learn content creation, shopping, growth strategies, and lifestyle content tips from experienced users.',
+  keywords: 'Xiaohongshu tips, RED Note tricks, social media tips, content creation tips, shopping guide, growth strategy, lifestyle content',
+};
 
 export default function TipsPage() {
   const tipCategories = [

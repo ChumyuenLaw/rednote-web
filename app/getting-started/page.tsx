@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Getting Started with Xiaohongshu (RED) | RedNote',
+  description: 'Learn how to get started with Xiaohongshu (RED). Step-by-step guide for creating an account, basic navigation, and essential features for new users.',
+  keywords: 'Xiaohongshu tutorial, RED app guide, how to use Xiaohongshu, RED Note basics, Chinese social media guide',
+};
+
 export default function GettingStarted() {
   return (
     <main className="max-w-4xl mx-auto p-8">

@@ -1,96 +1,91 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Shopping Tips for Xiaohongshu | RedNote',
+  description: 'Smart shopping tips for Xiaohongshu (RED). Learn how to find deals, verify authentic products, compare prices, and shop safely on the platform.',
+  keywords: 'Xiaohongshu shopping tips, RED shopping guide, find deals, authentic products, price comparison, safe shopping, Chinese shopping tips',
+};
 
 export default function ShoppingTipsPage() {
   const tips = [
     {
-      title: "Finding Authentic Products",
+      title: "Finding the Best Deals",
       content: `
-        How to verify product authenticity:
-        • Check seller verification status
+        • Use the price comparison feature
+        • Follow official brand stores
+        • Check seasonal sales and promotions
+        • Set price alerts for desired items
+        • Look for bundle deals
+        • Compare prices across sellers
+        • Check shipping costs
+      `,
+      icon: "🏷️"
+    },
+    {
+      title: "Verifying Authenticity",
+      content: `
+        • Check seller ratings and reviews
         • Look for official store badges
-        • Read seller ratings and history
-        • Verify product reviews with photos
-        • Compare prices with official websites
-        • Check product serial numbers
-        • Look for authentic packaging details
-        • Be cautious of extremely low prices
+        • Verify product authentication marks
+        • Compare with official retail prices
+        • Read buyer reviews carefully
+        • Check product packaging details
+        • Verify seller credentials
       `,
       icon: "✅"
     },
     {
-      title: "Smart Price Comparison",
+      title: "Reading Reviews",
       content: `
-        Tips for getting the best deals:
-        • Use RED's price comparison tool
-        • Check historical price trends
-        • Compare prices across different sellers
-        • Look for bundle deals
-        • Watch for seasonal sales
-        • Sign up for price drop alerts
-        • Consider shipping costs
-        • Check for available coupons
-      `,
-      icon: "💰"
-    },
-    {
-      title: "Reading Reviews Effectively",
-      content: `
-        How to evaluate product reviews:
-        • Focus on detailed reviews with photos
-        • Look for verified purchase badges
-        • Read both positive and negative reviews
-        • Check review dates for relevance
-        • Look for specific product details
-        • Pay attention to size/fit comments
-        • Consider similar use cases to yours
-        • Watch review videos for better insight
+        • Look for detailed reviews
+        • Check photo reviews
+        • Read recent feedback
+        • Note common issues mentioned
+        • Check size/fit comments
+        • Verify purchase dates
+        • Compare multiple reviews
       `,
       icon: "📝"
     },
     {
-      title: "Secure Payment Methods",
+      title: "Safe Payment",
       content: `
-        Payment safety tips:
         • Use RED's secure payment system
-        • Never send money outside the platform
-        • Keep payment confirmation records
-        • Enable purchase protection
-        • Use trusted payment methods
-        • Check seller's return policy
-        • Document item condition upon receipt
-        • Report suspicious payment requests
+        • Never pay outside the platform
+        • Keep payment records
+        • Check return policies
+        • Understand buyer protection
+        • Verify payment methods
+        • Save transaction details
       `,
-      icon: "🔒"
+      icon: "💳"
     },
     {
-      title: "International Shopping Guide",
+      title: "Smart Shopping",
       content: `
-        Tips for international buyers:
-        • Check shipping restrictions
-        • Understand import duties
-        • Verify international shipping costs
-        • Check estimated delivery times
-        • Review return policies
-        • Consider size differences
-        • Check voltage compatibility
-        • Understand warranty coverage
+        • Create shopping lists
+        • Save items for later
+        • Track price history
+        • Compare similar items
+        • Check shipping options
+        • Read product specifications
+        • Verify stock availability
       `,
-      icon: "🌍"
+      icon: "🛒"
     },
     {
-      title: "Product Quality Assessment",
+      title: "After Purchase",
       content: `
-        How to assess product quality:
-        • Check material descriptions
-        • Look for detailed specifications
-        • Read quality-specific reviews
-        • Watch unboxing videos
-        • Check brand reputation
-        • Verify product certifications
-        • Compare with similar products
-        • Ask sellers specific questions
+        • Track your order
+        • Save order details
+        • Check delivery status
+        • Know return windows
+        • Document any issues
+        • Rate and review
+        • Contact seller if needed
       `,
-      icon: "⭐"
+      icon: "📦"
     }
   ];
 
@@ -106,7 +101,7 @@ export default function ShoppingTipsPage() {
 
         <h1 className="text-4xl font-bold mb-6">Shopping Tips</h1>
         <p className="text-xl text-gray-600 mb-12">
-          Learn how to shop smartly and safely on RED Note with our expert shopping tips
+          Master the art of smart and safe shopping on RED Note with these expert tips
         </p>
 
         <div className="grid gap-8">
@@ -139,7 +134,7 @@ export default function ShoppingTipsPage() {
         <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg">
           <h3 className="text-xl font-semibold mb-4">Pro Shopping Tip</h3>
           <p className="text-gray-700 mb-4">
-            Create collections for different product categories you're interested in. This helps you track prices over time and compare similar items before making a purchase decision. Don't forget to enable price drop notifications for items you've saved!
+            Always save screenshots of product descriptions, prices, and seller promises. This documentation can be helpful if you need to resolve any issues later.
           </p>
         </div>
 

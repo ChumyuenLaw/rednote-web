@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Xiaohongshu (RED) Features Overview | RedNote',
+  description: 'Explore all features of Xiaohongshu (RED). Detailed guide to photo editing, video tools, writing features, analytics, collections, and live streaming capabilities.',
+  keywords: 'Xiaohongshu features, RED Note tools, photo editor, video tools, writing features, analytics, collections, live streaming',
+};
+
 export default function Features() {
   return (
     <main className="max-w-4xl mx-auto p-8">
