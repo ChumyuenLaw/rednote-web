@@ -3,6 +3,14 @@ import Link from 'next/link'
 export default function TutorialsPage() {
   const tutorials = [
     {
+      title: "TikTok to RedNote Live",
+      description: "Complete guide for TikTok creators transitioning to RedNote live streaming",
+      link: "/tutorials/tiktok-to-rednote-live",
+      icon: "🎥",
+      category: "Live Streaming",
+      timeToRead: "12 min"
+    },
+    {
       title: "Create Your Account",
       description: "Step-by-step guide to creating and setting up your RED Note account",
       link: "/tutorials/create-account",
